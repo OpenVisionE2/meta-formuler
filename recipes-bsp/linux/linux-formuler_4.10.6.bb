@@ -36,6 +36,12 @@ SRC_URI += "http://downloads.formuler-support.tv/kernels/linux-${PV}-${ARCH}.tar
     file://0001-stv090x-optimized-TS-sync-control.patch \
     file://0001-revert-xhci-plat.patch \
     file://noforce_correct_pointer_usage.patch \
+    file://v3-1-3-media-si2157-Add-support-for-Si2141-A10.patch \
+    file://v3-2-3-media-si2168-add-support-for-Si2168-D60.patch \
+    file://v3-3-3-media-dvbsky-MyGica-T230C3-support.patch \
+    file://v3-3-4-media-dvbsky-MyGica-T230C-support.patch \
+    file://v3-3-5-media-dvbsky-MyGica-T230C-support.patch \
+    file://add-more-devices-rtl8xxxu.patch \
     "
 
 inherit kernel machine_kernel_pr

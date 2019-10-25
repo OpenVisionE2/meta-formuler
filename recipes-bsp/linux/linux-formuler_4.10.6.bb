@@ -6,7 +6,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 KERNEL_RELEASE = "4.10.6"
 
-COMPATIBLE_MACHINE = "formuler1|formuler3|formuler4|formuler4turbo"
+COMPATIBLE_MACHINE = "^(formuler1|formuler3|formuler4|formuler4turbo)$"
 
 SRC_URI[md5sum] = "e5d32dd03b742e6101fde917dcba837d"
 SRC_URI[sha256sum] = "2997b825996beabc25d2428d37d680f56e4fa971500eabd2033a6fc13cf5765e"

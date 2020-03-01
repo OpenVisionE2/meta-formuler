@@ -43,6 +43,7 @@ SRC_URI += "http://downloads.formuler-support.tv/kernels/linux-${PV}-${ARCH}.tar
     file://v3-3-4-media-dvbsky-MyGica-T230C-support.patch \
     file://v3-3-5-media-dvbsky-MyGica-T230C-support.patch \
     file://add-more-devices-rtl8xxxu.patch \
+    file://0003-makefile-disable-warnings.patch \
     "
 
 inherit kernel machine_kernel_pr

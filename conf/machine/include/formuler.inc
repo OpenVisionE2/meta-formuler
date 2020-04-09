@@ -29,6 +29,11 @@ KERNEL_CONSOLE = "null"
 
 IMAGE_FSTYPES ?= "ubi"
 
+MTD_KERNEL = "mtd1"
+MTD_ROOTFS = "mtd2"
+KERNEL_FILE = "kernel.bin"
+ROOTFS_FILE = "rootfs.bin"
+
 UBI_VOLNAME = "rootfs"
 
 IMAGEDIR ?= "${MACHINE}"

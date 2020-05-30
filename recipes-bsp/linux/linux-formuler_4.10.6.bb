@@ -48,7 +48,7 @@ SRC_URI += "http://downloads.formuler-support.tv/kernels/linux-${PV}-${ARCH}.tar
     file://0003-makefile-disable-warnings.patch \
     "
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 S = "${WORKDIR}/linux-${PV}"
 

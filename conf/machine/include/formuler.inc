@@ -5,15 +5,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
 	formuler-dvb-modules-${MACHINE} \
 	"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
-	kernel-module-cdfs \
-	"
-
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
 MACHINE_EXTRA_RRECOMMENDS = " \
 	gstreamer1.0-plugin-dvbmediasink \
-	ntfs-3g \
 	"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"

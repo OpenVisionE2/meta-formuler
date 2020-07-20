@@ -7,7 +7,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
 
 KERNEL_MODULE_AUTOLOAD += "xfs"
 
-MACHINE_EXTRA_RRECOMMENDS = " \
+MACHINE_EXTRA_RRECOMMENDS += "\
 	gstreamer1.0-plugin-dvbmediasink \
 	"
 
@@ -49,7 +49,7 @@ IMAGE_CMD_ubi_prepend = " \
 	rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
 	"
 
-MACHINE_FEATURES += "alsa usbhost switchoff osdposition hdmicec ci textlcd blindscan-tbs"
+MACHINE_FEATURES += "alsa usbhost switchoff osdposition hdmicec ci textlcd blindscan-tbs videoenhancement HDMI"
 
 require conf/machine/include/tune-mips32.inc
 

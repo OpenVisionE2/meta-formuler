@@ -1,7 +1,7 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc" 
 
-MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	formuler-dvb-modules-${MACHINE} \
 	"
 
@@ -14,7 +14,7 @@ MACHINE_EXTRA_RRECOMMENDS += "\
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
 TARGET_ARCH = "mipsel"
-DEFAULTTUNE ?= "mips32el"
+DEFAULTTUNE = "mips32el"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-formuler"
 

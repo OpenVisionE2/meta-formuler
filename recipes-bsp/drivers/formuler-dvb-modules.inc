@@ -23,7 +23,7 @@ do_compile() {
 do_install() {
 	install -d ${D}${base_libdir}/modules/${KV}/extra
 	install -d ${D}/${sysconfdir}/modules-load.d
-	for i in ${@bb.utils.contains_any('MACHINE', 'formuler4turbo tiviaraplus', '${MACHINE}_dvb', '${MACHINE}_1 ${MACHINE}_2 ${MACHINE}_3 ${MACHINE}_4', d)}; do
+	for i in ${@bb.utils.contains('MACHINE', 'formuler4turbo', '${MACHINE}_dvb', '${MACHINE}_1 ${MACHINE}_2 ${MACHINE}_3 ${MACHINE}_4', d)}; do
 		install -m 0755 ${WORKDIR}/$i.ko ${D}${base_libdir}/modules/${KV}/extra
 		echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done

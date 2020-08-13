@@ -56,5 +56,6 @@ MKUBIFS_ARGS = "-m 2048 -e 126976 -c 8192"
 UBINIZE_ARGS = "-m 2048 -p 128KiB"
 
 RCTYPE = "18"
+RCNAME = "formuler1"
 
 BOX_BRAND = "formuler"

@@ -5,9 +5,6 @@ KERNELVERSION = "4.10.6"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	formuler-dvb-modules-${MACHINE} \
-	"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
 	gstreamer1.0-plugin-dvbmediasink \
 	"
 

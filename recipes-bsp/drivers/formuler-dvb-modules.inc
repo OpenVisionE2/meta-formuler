@@ -5,7 +5,6 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-
 PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://downloads.formuler-support.tv/drivers/${MACHINE}-drivers-${KV}-${SRCDATE}.zip"

@@ -5,7 +5,6 @@ KERNELVERSION = "4.10.6"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	formuler-dvb-modules-${MACHINE} \
-	gstreamer1.0-plugin-dvbmediasink \
 	"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
